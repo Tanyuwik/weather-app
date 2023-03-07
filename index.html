@@ -4,7 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form class="forms-city" id="search-form">
+        <input
+          type="text"
+          name="newcity"
+          placeholder="Enter a new city"
+          id="city-search-form"
+        />
+        <input class="searchbutton" type="submit" id="search" value="Search" />
+        <input
+          class="currentbutton"
+          type="submit"
+          id="current"
+          value="Current"
+        />
+      </form>
+      <h1 class="border p-3 rounded" id="city"></h1>
+      <p class="today" id="date"></p>
+      <h2 class="temperature" id="temperature-item"></h2>
+      <span class="units">
+        <a href="#" id="celsius-link">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+      </span>
+      <br />
+      <p class="emoji" id="description"></p>
+      <p class="indicators">
+        Pressure_______<strong id="pressure"></strong>
+        <br />
+        Wind ________<strong id="wind"></strong>
+        <br />
+        Humidity _______<strong id="humidity"></strong>
+        <br />
+      </p>
+      <div class="season">
+        <div class="row">
+          <div class="col">
+            <img src="images/seasons.jpg" alt="season" />
+          </div>
+          <div class="col">
+            <img src="images/seasons.jpg" alt="season" />
+          </div>
+        </div>
+      </div>
+      <h3>
+        <div class="row">
+          <div class="col">Sun</div>
+          <div class="col">Mon</div>
+          <div class="col">Tue</div>
+          <div class="col">Wed</div>
+          <div class="col">Thu</div>
+          <div class="col">Fri</div>
+          <div class="col">Sat</div>
+        </div>
+      </h3>
+      <div class="weather">
+        <div class="row">
+          <div class="col">☀️</div>
+          <div class="col">☀️</div>
+          <div class="col">☀️</div>
+          <div class="col">☀️</div>
+          <div class="col">⛅</div>
+          <div class="col">⛅</div>
+          <div class="col">🌧️</div>
+        </div>
+      </div>
+      <div class="temperature-of-the-day">
+        <div class="row">
+          <div class="col"><strong>10°</strong>1°</div>
+          <div class="col"><strong>12°</strong>2°</div>
+          <div class="col"><strong>14°</strong>3°</div>
+          <div class="col"><strong>14°</strong>4°</div>
+          <div class="col"><strong>14°</strong>4°</div>
+          <div class="col"><strong>15°</strong>4°</div>
+          <div class="col"><strong>9°</strong>2°</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
 </html>

@@ -1,0 +1,116 @@
+body {
+  background: radial-gradient(
+    828px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+}
+.forms-city {
+  margin-top: 15px;
+}
+.searchbutton {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: green;
+  border: 1px solid rgb(1, 55, 1);
+  border-radius: 4px;
+}
+.searchbutton:hover {
+  color: white;
+  background-color: rgb(13, 98, 13);
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.currentbutton {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(66, 66, 207);
+  border: 1px solid rgb(7, 35, 150);
+  border-radius: 4px;
+}
+.currentbutton:hover {
+  color: white;
+  background-color: rgb(10, 37, 155);
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  position: fixed;
+  top: 45px;
+  right: 170px;
+  color: rgba(134, 0, 0, 0.793);
+  background-color: rgb(255, 242, 242);
+}
+
+.today {
+  font-family: "Unbounded", cursive;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.temperature {
+  color: rgba(134, 0, 0, 0.793);
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px rgb(245, 233, 233), 2px 2px 1px rgb(255, 172, 172);
+}
+.units {
+  position: relative;
+  font-size: 20px;
+  top: -60px;
+  left: 63px;
+}
+.emoji {
+  position: relative;
+  font-size: 40px;
+  top: -100px;
+  left: 140px;
+}
+.indicators {
+  position: relative;
+  top: -180px;
+  left: 260px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+img {
+  display: block;
+  text-align: center;
+  width: 500px;
+  padding: 0;
+  margin-bottom: 15px;
+  position: relative;
+  top: -90px;
+}
+
+h3 {
+  font-family: "Unbounded", cursive;
+  font-size: 30px;
+  color: green;
+  text-decoration: underline;
+  margin-top: 0px;
+}
+.weather {
+  font-size: 25px;
+}
+.temperature-of-the-day {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: rgba(134, 0, 0, 0.793);
+  font-weight: 700;
+}
