@@ -113,4 +113,15 @@ h3 {
   font-size: 25px;
   color: rgba(134, 0, 0, 0.793);
   font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.website-url {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
 }
