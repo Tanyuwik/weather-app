@@ -21,13 +21,19 @@ let day = days[now.getDay()];
 let today = document.querySelector("#date");
 today.innerHTML = `${day} ${hours}:${minutes}`;
 
-function unitCelsius() {
+function unitCelsius(event) {
+  event.preventDefault();
+  celsius.classList.add("active");
+  fahrenheit.classList.remove("active");
   let temperature = document.querySelector("#temperature-item");
-  temperature.innerHTML = "7";
+  temperature.innerHTML = Math.round(celsiusTemperatura);
 }
 
-function unitFahrenheit() {
+function unitFahrenheit(event) {
+  event.preventDefault();
   let temperatureElement = document.querySelector("#temperature-item");
+  celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
   let temperature = temperatureElement.innerHTML;
   temperatureElement.innerHTML = `${Math.round((temperature * 9) / 5 + 32)}`;
 }
