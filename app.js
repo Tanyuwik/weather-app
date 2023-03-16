@@ -46,7 +46,9 @@ fahrenheit.addEventListener("click", unitFahrenheit);
 function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
 
-  let temperature = Math.round(response.data.main.temp);
+  celsiusTemperatura = response.data.main.temp;
+
+  let temperature = Math.round(celsiusTemperatura);
   document.querySelector("#temperature-item").innerHTML = `${temperature}`;
 
   let wind = Math.round(response.data.wind.speed);
