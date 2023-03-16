@@ -52,20 +52,8 @@ function showTemperature(response) {
   let pressure = Math.round(response.data.main.pressure);
   document.querySelector("#pressure").innerHTML = `${pressure}`;
 
-  let description = document.querySelector("#description");
-  let descriptionMain = response.data.weather[0].main;
-  if (descriptionMain === "Clear") {
-    description.innerHTML = `☀️`;
-  }
-  if (descriptionMain === "Clouds") {
-    description.innerHTML = `☁️`;
-  }
-  if (descriptionMain === "Snow") {
-    description.innerHTML = `🌨️`;
-  }
-  if (descriptionMain === "Rain") {
-    description.innerHTML = `🌧️`;
-  }
+  let descriptionElement = document.querySelector("#date-description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
 function search(city) {
