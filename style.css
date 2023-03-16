@@ -1,4 +1,5 @@
 body {
+  margin: 30px;
   background: radial-gradient(
     828px at 2.9% 15%,
     rgb(191, 224, 251) 0%,
@@ -84,16 +85,16 @@ li:first-letter {
   top: -60px;
   left: 63px;
 }
-.emoji {
+.icon {
   position: relative;
-  font-size: 40px;
-  top: -100px;
-  left: 140px;
+  width: 100px;
+  top: -140px;
+  left: 200px;
 }
 .indicators {
   position: relative;
-  top: -180px;
-  left: 260px;
+  top: -240px;
+  left: 320px;
   text-decoration: underline;
   font-size: 20px;
 }
@@ -102,9 +103,14 @@ img {
   text-align: center;
   width: 600px;
   padding: 0;
-  margin-bottom: 15px;
   position: relative;
-  top: -100px;
+  top: -180px;
+  left: 50px;
+}
+
+.forecast {
+margin-top: -100px;
+padding-left: 80px;
 }
 
 h3 {
