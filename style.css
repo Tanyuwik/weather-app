@@ -80,11 +80,23 @@ li:first-letter {
   text-shadow: 1px 1px 1px rgb(245, 233, 233), 2px 2px 1px rgb(255, 172, 172);
 }
 .units {
+  text-decoration:none;
   position: relative;
   font-size: 20px;
   top: -60px;
   left: 63px;
 }
+
+.active {
+  text-decoration:none;
+  color: black;
+  cursor: default;
+  }
+  
+.fahrenheit {
+  text-decoration:none;
+  }
+
 .icon {
   position: relative;
   width: 100px;
