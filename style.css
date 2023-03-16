@@ -46,20 +46,29 @@ h1 {
   text-align: center;
   font-size: 44px;
   font-weight: 600;
-  position: fixed;
+  position: absolute;
   top: 45px;
-  right: 170px;
+  right: 250px;
   color: rgba(134, 0, 0, 0.793);
   background-color: rgb(255, 242, 242);
 }
 
-.today {
+ul {
   font-family: "Unbounded", cursive;
-  margin-top: 15px;
-  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
   font-size: 16px;
   font-weight: 300;
   text-decoration: underline;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.today {
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .temperature {
@@ -91,11 +100,11 @@ h1 {
 img {
   display: block;
   text-align: center;
-  width: 500px;
+  width: 600px;
   padding: 0;
   margin-bottom: 15px;
   position: relative;
-  top: -90px;
+  top: -100px;
 }
 
 h3 {
