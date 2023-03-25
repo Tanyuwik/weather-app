@@ -4,27 +4,23 @@
   padding: 30px;
   border: 1px solid #dadde1;
   border-radius: 5px;
-  background: radial-gradient(
-    828px at 2.9% 15%,
-    rgb(191, 224, 251) 0%,
-    rgb(232, 233, 251) 25.8%,
-    rgb(252, 239, 250) 50.8%,
-    rgb(234, 251, 251) 77.6%,
-    rgb(240, 251, 244) 100.7%
-  );
+  background: linear-gradient(68.2deg, rgb(7, 3, 98) -0.1%, rgb(179, 26, 132) 47.7%, rgb(239, 186, 83) 100.2%);
 }
+
 .forms-city {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 .searchbutton {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
   background-color: green;
   border: 1px solid rgb(1, 55, 1);
   border-radius: 4px;
 }
+
 .searchbutton:hover {
   color: white;
   background-color: rgb(13, 98, 13);
@@ -34,12 +30,13 @@
 
 .currentbutton {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
   background-color: rgb(66, 66, 207);
   border: 1px solid rgb(7, 35, 150);
   border-radius: 4px;
 }
+
 .currentbutton:hover {
   color: white;
   background-color: rgb(10, 37, 155);
@@ -57,6 +54,7 @@ h1 {
 }
 
 ul {
+  color: white;
   font-family: "Unbounded", cursive;
   list-style: none;
   padding-left: 0;
@@ -75,12 +73,13 @@ li:first-letter {
 }
 
 .temperature {
-  color: rgba(134, 0, 0, 0.793);
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 45px;
   font-weight: 800;
-  text-shadow: 1px 1px 1px rgb(245, 233, 233), 2px 2px 1px rgb(255, 172, 172);
+  text-shadow: 1px 1px 1px rgb(74, 18, 18), 2px 2px 1px rgb(21, 0, 0);
 }
+
 .units {
   text-decoration:none;
   position: relative;
@@ -91,7 +90,7 @@ li:first-letter {
 
 .active {
   text-decoration:none;
-  color: black;
+  color: white;
   cursor: default;
   }
   
@@ -101,20 +100,23 @@ li:first-letter {
 
 .icon {
   position: relative;
-  width: 100px;
-  top: -120px;
-  left: 140px;
+  width: 110px;
+  top: -130px;
+  left: 160px;
 }
+
 .indicators {
+  color: white;
+  font-family: "Unbounded", cursive;
   position: relative;
-  top: -250px;
-  left: 360px;
+  top: -220px;
+  left: 340px;
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .weather-forecast {
-  margin-top: -230px;
+  margin-top: -210px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -122,17 +124,17 @@ li:first-letter {
 .weather-forecast-date {
   font-family: "Unbounded", cursive;
   font-size: 20px;
-  color: green;
+  color: rgb(38, 247, 38);
   text-decoration: underline;
 }
 
 .weather-forecast-temperatures {
   font-size: 16px;
-  color: rgba(134, 0, 0, 0.793);
+  color: white;
 }
 
 .weather-forecast-temperatures-max {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .website-url {
@@ -141,6 +143,7 @@ li:first-letter {
 }
 
 .name {
+  color: white;
   font-size: 14px;
   font-weight: 600;
 }
