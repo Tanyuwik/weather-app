@@ -89,7 +89,7 @@ li:first-letter {
 
 .active {
   text-decoration:none;
-  color: white;
+  color: black;
   cursor: default;
   }
   
