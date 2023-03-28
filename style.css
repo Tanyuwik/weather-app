@@ -1,3 +1,7 @@
+body {
+  background-image: url("sky.jpg");
+}
+
 .weather-app {
   max-width: 600px;
   margin: 25px auto;
@@ -84,18 +88,8 @@ li:first-letter {
   position: relative;
   font-size: 20px;
   top: -60px;
-  left: 63px;
+  left: 50px;
 }
-
-.active {
-  text-decoration:none;
-  color: black;
-  cursor: default;
-  }
-  
-.fahrenheit {
-  text-decoration:none;
-  }
 
 .icon {
   position: relative;
