@@ -63,28 +63,6 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-function unitCelsius(event) {
-  event.preventDefault();
-  celsius.classList.add("active");
-  fahrenheit.classList.remove("active");
-  let temperature = document.querySelector("#temperature-item");
-  temperature.innerHTML = Math.round(celsiusTemperatura);
-}
-
-function unitFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature-item");
-  celsius.classList.remove("active");
-  fahrenheit.classList.add("active");
-  let temperature = temperatureElement.innerHTML;
-  temperatureElement.innerHTML = `${Math.round((temperature * 9) / 5 + 32)}`;
-}
-
-let celsius = document.querySelector("#celsius-link");
-celsius.addEventListener("click", unitCelsius);
-let fahrenheit = document.querySelector("#fahrenheit-link");
-fahrenheit.addEventListener("click", unitFahrenheit);
-
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "a43564c91a6c605aeb564c9ed02e3858";
